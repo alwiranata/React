@@ -1,38 +1,51 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  font-family: arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.addTask {
+  height: 30vh;
+  background-color: dodgerblue;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.list {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task button {
+  width: auto; /* Gunakan lebar otomatis */
+  height: auto; /* Gunakan tinggi otomatis */
+  padding: 5px 10px; /* Atur padding di sekitar teks tombol */
+  margin-left: 20px;
+  text-align: center;
+  display: inline-flex; /* Mengubah tombol menjadi inline-flex */
+  align-items: center; /* Pusatkan vertikal teks tombol */
+  justify-content: center; /* Pusatkan horizontal teks tombol */
 }
